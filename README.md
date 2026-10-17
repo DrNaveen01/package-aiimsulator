@@ -29,7 +29,7 @@ library(aiimsulator)
 Alternatively, with `pak`:
 
 ```r
-pak::local_install("path/to/aiimsulator")
+pak::pak("DrNaveen01/package-aiimsulator")
 ```
 
 ## Basic example
@@ -156,6 +156,9 @@ prevalence, clinical margins, ICC and anticipated effects separately.
   effect, clinically meaningful margins and feasibility. The software does
   not validate the study design automatically.
 
+
+<!--
+
 ## Developer checks (required before CRAN)
 
 ```r
@@ -170,9 +173,9 @@ devtools::check(args = "--as-cran")
 # R CMD build aiimsulator
 # R CMD check --as-cran aiimsulator_0.1.0.tar.gz
 ```
+-->
 
 GitHub Actions includes checks on Linux, Windows and macOS. The source archive
 provided here is a **development archive**, not an `R CMD build` product.
 
-For official requirements, see <https://cran.r-project.org/web/packages/policies.html>
-and <https://cran.r-project.org/doc/manuals/r-release/R-exts.html>.
+
