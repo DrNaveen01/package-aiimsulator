@@ -17,6 +17,6 @@ Imports: stats
 Suggests: testthat (>= 3.0.0), knitr, rmarkdown
 Config/testthat/edition: 3
 VignetteBuilder: knitr
-URL: https://github.com/DrNaveen01/package-aiimsulator
+URL: https://github.com/DrNaveen01/package-aiimsulator, https://drnaveen01.github.io/package-aiimsulator/
 BugReports: https://github.com/DrNaveen01/package-aiimsulator/issues
 Config/roxygen2/version: 8.1.0
