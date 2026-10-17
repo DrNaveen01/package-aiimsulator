@@ -40,3 +40,5 @@ ss_two_proportions(p1, p2 = NULL, power = .8, alpha = .05,
 \examples{
 ss_two_proportions(.20, .35)
 }
+
+

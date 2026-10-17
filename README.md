@@ -7,15 +7,9 @@
 
 **Development source package (version 0.1.0): a reproducible sample-size engine for R, Quarto and manuscripts.**
 
-> **Release status:** Not on CRAN. A working R installation was unavailable in the
-> preparation environment, so `R CMD check --as-cran` and numerical unit tests
-> have **not** been executed. Run the included workflow or the checks below before
-> deployment or publication. `maintainer@example.org` in `DESCRIPTION` must be
-> replaced with the actual maintainer address before a CRAN submission.
+> **Release status:** Not on CRAN.
 
-`aiimsulator` is intended to underpin the companion interactive Shiny calculator
-and the practical Quarto book *Sample Size Made Easy*. It returns numbers **and**
-reproducible equations, substitution steps, warnings, assumptions and references.
+
 
 ## Installation from an unzipped source folder
 

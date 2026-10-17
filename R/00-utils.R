@@ -1,4 +1,4 @@
-# All calculations use proportions in [0,1], not percentages.
+1# All calculations use proportions in [0,1], not percentages.
 ss_assert <- function(x, label, lower = -Inf, upper = Inf,
                       lower_open = FALSE, upper_open = FALSE) {
   if (!is.numeric(x) || length(x) != 1L || is.na(x) || !is.finite(x)) {
