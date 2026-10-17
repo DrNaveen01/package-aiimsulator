@@ -1,6 +1,6 @@
 # aiimsulator
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.YOUR_DOI.svg)](https://doi.org/10.5281/zenodo.23441808)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23441808.svg)](https://doi.org/10.5281/zenodo.23441808)
 
 **Development source package (version 0.1.0): a reproducible sample-size
 engine for R, Quarto and manuscripts.**
