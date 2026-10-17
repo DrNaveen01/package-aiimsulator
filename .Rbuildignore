@@ -4,3 +4,4 @@
 ^\.Rproj\.user$
 ^README\.qmd$
 ^.*\.Rproj$
+^cran-comments\.md$

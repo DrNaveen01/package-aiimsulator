@@ -1,6 +1,6 @@
 Package: aiimsulator
 Title: Reproducible Sample Size Calculations and Manuscript-Ready Equations
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: person(given = "Naveen", family = "Suthar", role = c("aut", "cre"), email = "aiims.drnaveen@gmail.com")
 Description: Provides transparent sample size planning for estimation and
     independent-group hypothesis tests, diagnostic accuracy, receiver operating
