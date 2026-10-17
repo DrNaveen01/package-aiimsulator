@@ -71,7 +71,7 @@
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/DrNaveen01/package-aiimsulator" class="external-link">aiimsulator</a></span><span class="op">)</span></span></code></pre></div>
 <p>Alternatively, with <code>pak</code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/local_install.html" class="external-link">local_install</a></span><span class="op">(</span><span class="st">"path/to/aiimsulator"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"DrNaveen01/package-aiimsulator"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="basic-example">Basic example<a class="anchor" aria-label="anchor" href="#basic-example"></a>
@@ -181,23 +181,23 @@
 <li>Non-response: inflation is applied <strong>before</strong> upward rounding.</li>
 <li>A calculation must be reviewed for sampling design, estimand, hypothesized effect, clinically meaningful margins and feasibility. The software does not validate the study design automatically.</li>
 </ul>
-</div>
-<div class="section level2">
-<h2 id="developer-checks-required-before-cran">Developer checks (required before CRAN)<a class="anchor" aria-label="anchor" href="#developer-checks-required-before-cran"></a>
-</h2>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"devtools"</span>, <span class="st">"testthat"</span>, <span class="st">"rcmdcheck"</span>, <span class="st">"knitr"</span>, <span class="st">"rmarkdown"</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">document</span><span class="op">(</span><span class="op">)</span>    <span class="co"># roxygen if documentation is updated</span></span>
-<span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">test</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">check</span><span class="op">(</span>args <span class="op">=</span> <span class="st">"--as-cran"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Then from a shell, in the parent directory:</span></span>
-<span><span class="co"># R CMD build aiimsulator</span></span>
-<span><span class="co"># R CMD check --as-cran aiimsulator_0.1.0.tar.gz</span></span></code></pre></div>
-<p>GitHub Actions includes checks on Linux, Windows and macOS. The source archive provided here is a <strong>development archive</strong>, not an <code>R CMD build</code> product.</p>
-<p>For official requirements, see <a href="https://cran.r-project.org/web/packages/policies.html" class="external-link uri">https://cran.r-project.org/web/packages/policies.html</a> and <a href="https://cran.r-project.org/doc/manuals/r-release/R-exts.html" class="external-link uri">https://cran.r-project.org/doc/manuals/r-release/R-exts.html</a>.</p>
+<!--
+
+## Developer checks (required before CRAN)
+
+```r
+install.packages(c("devtools", "testthat", "rcmdcheck", "knitr", "rmarkdown"))
+
+devtools::document()    # roxygen if documentation is updated
+
+devtools::test()
+devtools::check(args = "--as-cran")
+
+# Then from a shell, in the parent directory:
+# R CMD build aiimsulator
+# R CMD check --as-cran aiimsulator_0.1.0.tar.gz
+```
+--><p>GitHub Actions includes checks on Linux, Windows and macOS. The source archive provided here is a <strong>development archive</strong>, not an <code>R CMD build</code> product.</p>
 </div>
 </div>
 

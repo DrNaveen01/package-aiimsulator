@@ -23,7 +23,7 @@ Alternatively, with `pak`:
 
 ``` r
 
-pak::local_install("path/to/aiimsulator")
+pak::pak("DrNaveen01/package-aiimsulator")
 ```
 
 ## Basic example
@@ -160,26 +160,6 @@ anticipated effects separately.
   hypothesized effect, clinically meaningful margins and feasibility.
   The software does not validate the study design automatically.
 
-## Developer checks (required before CRAN)
-
-``` r
-
-install.packages(c("devtools", "testthat", "rcmdcheck", "knitr", "rmarkdown"))
-
-devtools::document()    # roxygen if documentation is updated
-
-devtools::test()
-devtools::check(args = "--as-cran")
-
-# Then from a shell, in the parent directory:
-# R CMD build aiimsulator
-# R CMD check --as-cran aiimsulator_0.1.0.tar.gz
-```
-
 GitHub Actions includes checks on Linux, Windows and macOS. The source
 archive provided here is a **development archive**, not an `R CMD build`
 product.
-
-For official requirements, see
-<https://cran.r-project.org/web/packages/policies.html> and
-<https://cran.r-project.org/doc/manuals/r-release/R-exts.html>.
