@@ -1,0 +1,5 @@
+^\.github$
+^\.gitignore$
+^CRAN-SUBMISSION-CHECKLIST\.md$
+^\.Rproj\.user$
+^README\.qmd$

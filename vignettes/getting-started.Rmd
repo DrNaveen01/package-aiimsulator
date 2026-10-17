@@ -1,0 +1,54 @@
+---
+title: "Reproducible Sample Size Calculations with aiimsulator"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Reproducible Sample Size Calculations with aiimsulator}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+## Calculation and selective reporting
+
+Calculate complete and recruitment targets using the same structured object.
+
+```{r}
+library(aiimsulator)
+x <- ss_proportion(.50, .05, nonresponse = .10)
+x
+ss_table(x)
+```
+
+Get the general equation, substitution and report separately:
+
+```{r}
+ss_equation(x, "formula", "text")
+ss_equation(x, "substituted_values", "text")
+ss_report(x, formula = FALSE, substituted_values = FALSE,
+          results = TRUE, assumptions = TRUE, format = "text")
+```
+
+## Additional methods
+
+```{r}
+ss_mean(sd = 12, precision = 3)
+ss_two_means(difference = 5, pooled_sd = 12)
+ss_two_proportions(.20, .35)
+ss_yamane(1500)
+ss_diagnostic(objective = "joint", sensitivity = .85,
+              specificity = .9, recruitment = "separate")
+ss_correlation(r = .3)
+ss_auc(auc = .80, precision = .05)
+```
+
+## Study-design qualifications
+
+Do not use this package to justify clinically meaningful margins or effect
+sizes without external scientific evidence. Normal, Fisher-z and Hanley-McNeil
+planning approximations have design limitations. A cluster-randomized trial
+cannot generally be planned correctly by simple multiplication of an independent
+individual sample size by a design effect. The accompanying documentation
+records these boundaries.

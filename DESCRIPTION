@@ -1,0 +1,22 @@
+Package: aiimsulator
+Title: Reproducible Sample Size Calculations and Manuscript-Ready Equations
+Version: 0.1.0
+Authors@R: person(given = "Naveen", family = "Suthar", role = c("aut", "cre"), email = "maintainer@example.org")
+Description: Provides transparent sample size planning for estimation and
+    independent-group hypothesis tests, diagnostic accuracy, receiver operating
+    characteristic area under the curve, and correlation. Returns structured
+    numerical results, general formulas, numerically substituted equations,
+    assumptions, references, and selectively formatted methodological reports.
+    Includes optional design-effect and finite-population adjustments for
+    appropriate estimation designs. Methods use explicitly documented normal
+    and Fisher-transformation approximations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/DrNaveen01/sample-size-calculator
+BugReports: https://github.com/DrNaveen01/sample-size-calculator/issues
+RoxygenNote: 7.3.2

@@ -1,0 +1,39 @@
+---
+title: "Sample size calculation: executable methods appendix"
+format:
+  html: default
+  docx: default
+  pdf: default
+execute:
+  echo: false
+---
+
+```{r}
+#| output: asis
+library(aiimsulator)
+
+sample_size <- ss_proportion(
+  p = 0.50,
+  precision = 0.05,
+  confidence = 0.95,
+  nonresponse = 0.10
+)
+
+cat(ss_report(
+  sample_size,
+  formula = TRUE,
+  substituted_values = TRUE,
+  results = TRUE,
+  assumptions = TRUE,
+  references = TRUE,
+  format = "markdown"
+))
+```
+
+The final recruitment target was `r sample_size$n_final` participants.
+
+```{r}
+#| echo: false
+knitr::kable(ss_table(sample_size), digits = 5,
+             caption = "Intermediate calculations and recruitment count")
+```
