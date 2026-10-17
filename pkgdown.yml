@@ -1,0 +1,9 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  getting-started: getting-started.html
+last_built: 2026-10-17T20:15Z
+urls:
+  reference: https://drnaveen01.github.io/package-aiimsulator/reference
+  article: https://drnaveen01.github.io/package-aiimsulator/articles
