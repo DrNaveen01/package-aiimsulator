@@ -7,7 +7,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/DrNaveen01/package-aiimsulator/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/DrNaveen01/package-aiimsulator/blob/v1.0.0.9000/inst/CITATION)
 
 Suthar N (2026). *aiimsulator: Reproducible Sample Size Calculations and
 Manuscript-Ready Equations*. R package version 0.1.0 (development
