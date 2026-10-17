@@ -1,0 +1,22 @@
+Version: 2.0.0
+Date: 2026-10-17 19:58:00 UTC
+SHA: fatal: detected dubious ownership in repository at 'G:/Dr
+       Naveen Suthar/E Drive/workshop/package-aiimsulator'
+
+Version: 2.0.0
+Date: 2026-10-17 19:58:00 UTC
+SHA: 'G:/Dr Naveen Suthar/E Drive/workshop/package-aiimsulator'
+       is on a file system that does not record ownership
+
+Version: 2.0.0
+Date: 2026-10-17 19:58:00 UTC
+SHA: To add an exception for this directory, call:
+
+Version: 2.0.0
+Date: 2026-10-17 19:58:00 UTC
+SHA:
+
+Version: 2.0.0
+Date: 2026-10-17 19:58:00 UTC
+SHA: git config --global --add safe.directory 'G:/Dr Naveen
+       Suthar/E Drive/workshop/package-aiimsulator'

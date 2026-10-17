@@ -5,3 +5,4 @@
 ^README\.qmd$
 ^.*\.Rproj$
 ^cran-comments\.md$
+^CRAN-SUBMISSION$
