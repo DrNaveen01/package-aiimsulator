@@ -1,3 +1,8 @@
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/DrNaveen01/package-aiimsulator/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/DrNaveen01/package-aiimsulator/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end -->
+
+
 # aiimsulator
 
 **Development source package (version 0.1.0): a reproducible sample-size engine for R, Quarto and manuscripts.**
